@@ -1,4 +1,4 @@
-# BLACKLINE Detailing — V4.4
+# BLACKLINE Detailing — V4.5
 
 Premium automotive detailing portfolio concept.
 
@@ -40,3 +40,7 @@ All business information, prices, contact details and claims are fictional portf
 - fixed mobile navigation leaking Booking/Get a quote into the header
 - closed mobile menu now shows only brand + burger
 - mobile menu opens as a full-screen overlay
+
+- final mobile hero spacing and typography polish
+- enlarged and sharpened Recent Work WebP assets for better mobile rendering
+- kept desktop layout unchanged

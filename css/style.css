@@ -353,3 +353,61 @@ textarea{resize:vertical}
   .menu-toggle.active span:nth-child(2){opacity:0}
   .menu-toggle.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 }
+
+/* V4.5 final mobile polish */
+@media (max-width:760px){
+  .hero{
+    min-height:690px;
+  }
+
+  .hero-copy{
+    padding:170px 0 38px;
+  }
+
+  .hero-copy h1{
+    font-size:clamp(2.75rem,12.4vw,4rem);
+    line-height:1.02;
+    margin-bottom:20px;
+  }
+
+  .hero-text{
+    font-size:.96rem;
+    line-height:1.62;
+    margin-bottom:22px;
+  }
+
+  .hero-actions{
+    gap:10px;
+  }
+
+  .hero-actions .btn{
+    min-height:48px;
+  }
+
+  .hero-services{
+    margin-top:26px;
+  }
+
+  .recent-work{
+    padding-top:23px;
+  }
+
+  .work-card img{
+    aspect-ratio:1.35/1;
+    object-fit:cover;
+  }
+}
+
+@media (max-width:480px){
+  .hero{
+    min-height:660px;
+  }
+
+  .hero-copy{
+    padding-top:155px;
+  }
+
+  .hero-copy h1{
+    font-size:clamp(2.65rem,12vw,3.65rem);
+  }
+}
