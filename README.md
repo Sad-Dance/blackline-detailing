@@ -1,4 +1,4 @@
-# BLACKLINE Detailing — V4.3
+# BLACKLINE Detailing — V4.4
 
 Premium automotive detailing portfolio concept.
 
@@ -36,3 +36,7 @@ All business information, prices, contact details and claims are fictional portf
 - redesigned Services as a clean premium list
 - removed 01/02/03/04 numbering
 - removed oversized service cards and excess whitespace
+
+- fixed mobile navigation leaking Booking/Get a quote into the header
+- closed mobile menu now shows only brand + burger
+- mobile menu opens as a full-screen overlay

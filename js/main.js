@@ -5,6 +5,7 @@ const nav = document.querySelector('.site-nav');
 toggle.addEventListener('click', () => {
   const open = nav.classList.toggle('open');
   document.body.classList.toggle('menu-open', open);
+  toggle.classList.toggle('active', open);
   toggle.setAttribute('aria-expanded', String(open));
 });
 
@@ -12,6 +13,7 @@ document.querySelectorAll('.site-nav a').forEach(link => {
   link.addEventListener('click', () => {
     nav.classList.remove('open');
     document.body.classList.remove('menu-open');
+    toggle.classList.remove('active');
     toggle.setAttribute('aria-expanded', 'false');
   });
 });
