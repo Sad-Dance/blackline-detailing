@@ -1,23 +1,22 @@
-# BLACKLINE Detailing — V2
+# BLACKLINE Detailing — V3
 
-Premium portfolio concept for a fictional automotive detailing studio.
+Premium automotive detailing portfolio concept.
 
-## Improvements in V2
-- stronger premium hero
-- trust strip
-- portfolio gallery
-- more polished visual hierarchy
-- improved responsive behavior
-- before/after interaction
-- booking form demo
-- vanilla HTML/CSS/JS only
+## Live demo
+https://blackline-detailing.netlify.app/
 
-## Run
-Open `index.html` in your browser.
+## Stack
+- HTML5
+- CSS3
+- Vanilla JavaScript
 
-All business data, pricing and claims are fictional portfolio/demo content.
+## V3 improvements
+- photorealistic hero visual
+- premium black + gold art direction
+- recent work gallery
+- real image before/after comparisons
+- responsive mobile navigation
+- packages and booking sections
+- automatic Netlify deploy from GitHub
 
-
-## Deployment
-
-Automatically deployed from GitHub to Netlify.
+All names, prices, contact information and business claims are fictional demo content.

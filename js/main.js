@@ -16,45 +16,51 @@ document.querySelectorAll('.site-nav a').forEach(link => {
   });
 });
 
-const range = document.getElementById('compareRange');
-const beforeLayer = document.getElementById('beforeLayer');
-const handle = document.getElementById('compareHandle');
+document.querySelectorAll('[data-compare]').forEach(compare => {
+  const range = compare.querySelector('.compare-range');
+  const before = compare.querySelector('[data-before]');
+  const handle = compare.querySelector('[data-handle]');
 
-function updateCompare(value) {
-  beforeLayer.style.width = `${value}%`;
-  handle.style.left = `${value}%`;
-}
-range.addEventListener('input', e => updateCompare(e.target.value));
-updateCompare(range.value);
+  const update = () => {
+    const value = Number(range.value);
+    before.style.width = `${value}%`;
+    const image = before.querySelector('img');
+    image.style.width = `${10000 / value}%`;
+    handle.style.left = `${value}%`;
+  };
 
-const revealObserver = new IntersectionObserver((entries) => {
+  range.addEventListener('input', update);
+  update();
+});
+
+const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
-      revealObserver.unobserve(entry.target);
+      observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.1 });
 
-document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 const form = document.getElementById('bookingForm');
 const status = document.getElementById('formStatus');
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
+form.addEventListener('submit', event => {
+  event.preventDefault();
   const data = new FormData(form);
   const required = ['name', 'phone', 'vehicle', 'service'];
   const missing = required.some(key => !String(data.get(key) || '').trim());
 
   if (missing) {
     status.textContent = 'Please complete the required fields.';
-    status.style.color = '#ff9d9d';
+    status.style.color = '#ff9a9a';
     return;
   }
 
   status.textContent = 'Demo request captured locally — no data was sent.';
-  status.style.color = '#cfd7e4';
+  status.style.color = '#d7c194';
   form.reset();
 });
 
