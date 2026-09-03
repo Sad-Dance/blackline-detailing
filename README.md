@@ -1,4 +1,4 @@
-# BLACKLINE Detailing — V4.2
+# BLACKLINE Detailing — V4.3
 
 Premium automotive detailing portfolio concept.
 
@@ -32,3 +32,7 @@ All business information, prices, contact details and claims are fictional portf
 - added service trust strip
 - cleaned customer-facing booking copy
 - clarified WhatsApp placeholder until a real client number is connected
+
+- redesigned Services as a clean premium list
+- removed 01/02/03/04 numbering
+- removed oversized service cards and excess whitespace
