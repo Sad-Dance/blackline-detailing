@@ -1,4 +1,4 @@
-# BLACKLINE Detailing — V4.1
+# BLACKLINE Detailing — V4.2
 
 Premium automotive detailing portfolio concept.
 
@@ -26,3 +26,9 @@ https://blackline-detailing.netlify.app/
 All business information, prices, contact details and claims are fictional portfolio/demo content.
 
 - cleaned Recent Work images: no baked-in duplicate captions
+
+- removed duplicate Results navigation
+- replaced text-symbol contact icons with SVG icons
+- added service trust strip
+- cleaned customer-facing booking copy
+- clarified WhatsApp placeholder until a real client number is connected
