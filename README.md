@@ -10,7 +10,7 @@ https://blackline-detailing.netlify.app/
 - CSS3
 - Vanilla JavaScript
 
-## V3 improvements
+## V3.1 improvements
 - photorealistic hero visual
 - premium black + gold art direction
 - recent work gallery
@@ -20,3 +20,5 @@ https://blackline-detailing.netlify.app/
 - automatic Netlify deploy from GitHub
 
 All names, prices, contact information and business claims are fictional demo content.
+
+- corrected before/after pairs using identical framing
