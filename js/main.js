@@ -16,23 +16,6 @@ document.querySelectorAll('.site-nav a').forEach(link => {
   });
 });
 
-document.querySelectorAll('[data-compare]').forEach(compare => {
-  const range = compare.querySelector('.compare-range');
-  const before = compare.querySelector('[data-before]');
-  const handle = compare.querySelector('[data-handle]');
-
-  const update = () => {
-    const value = Number(range.value);
-    before.style.width = `${value}%`;
-    const image = before.querySelector('img');
-    image.style.width = `${10000 / value}%`;
-    handle.style.left = `${value}%`;
-  };
-
-  range.addEventListener('input', update);
-  update();
-});
-
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -49,18 +32,19 @@ const status = document.getElementById('formStatus');
 
 form.addEventListener('submit', event => {
   event.preventDefault();
+
   const data = new FormData(form);
   const required = ['name', 'phone', 'vehicle', 'service'];
   const missing = required.some(key => !String(data.get(key) || '').trim());
 
   if (missing) {
     status.textContent = 'Please complete the required fields.';
-    status.style.color = '#ff9a9a';
+    status.style.color = '#ff9d9d';
     return;
   }
 
   status.textContent = 'Demo request captured locally — no data was sent.';
-  status.style.color = '#d7c194';
+  status.style.color = '#d7bd87';
   form.reset();
 });
 

@@ -1,4 +1,4 @@
-# BLACKLINE Detailing — V3
+# BLACKLINE Detailing — V4.1
 
 Premium automotive detailing portfolio concept.
 
@@ -10,15 +10,19 @@ https://blackline-detailing.netlify.app/
 - CSS3
 - Vanilla JavaScript
 
-## V3.1 improvements
-- photorealistic hero visual
-- premium black + gold art direction
+## V4
+- final black + gold visual direction
+- Porsche-based hero artwork
+- Porsche wheel detail artwork
+- no before/after section
 - recent work gallery
-- real image before/after comparisons
+- contact strip
+- services
+- pricing packages
+- booking form
 - responsive mobile navigation
-- packages and booking sections
-- automatic Netlify deploy from GitHub
+- automatic deployment through Netlify
 
-All names, prices, contact information and business claims are fictional demo content.
+All business information, prices, contact details and claims are fictional portfolio/demo content.
 
-- corrected before/after pairs using identical framing
+- cleaned Recent Work images: no baked-in duplicate captions

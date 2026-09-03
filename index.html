@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="BLACKLINE Detailing — premium automotive detailing concept website." />
-  <meta name="theme-color" content="#08090b" />
+  <meta name="theme-color" content="#070809" />
   <title>BLACKLINE Detailing</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,36 +13,38 @@
 
   <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
   <header class="site-header" id="top">
     <div class="container nav-wrap">
       <a class="brand" href="#top" aria-label="BLACKLINE home">
         <span class="brand-mark">BL</span>
-        <span class="brand-copy"><strong>BLACKLINE</strong><small>DETAILING</small></span>
+        <span class="brand-copy">
+          <strong>BLACKLINE</strong>
+          <small>DETAILING</small>
+        </span>
       </a>
 
       <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
         <span></span><span></span><span></span>
       </button>
 
-      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
         <a href="#services">Services</a>
-        <a href="#results">Results</a>
+        <a href="#gallery">Results</a>
         <a href="#gallery">Gallery</a>
         <a href="#packages">Packages</a>
         <a href="#booking">Booking</a>
-        <a href="#booking" class="nav-cta">Get a quote</a>
+        <a class="nav-cta" href="#booking">Get a quote</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="hero-media" aria-hidden="true"></div>
-      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
 
-      <div class="container hero-grid">
+      <div class="container hero-layout">
         <div class="hero-copy reveal">
           <p class="eyebrow">Premium automotive care</p>
           <h1>Restore the finish.<br><span>Protect the feeling.</span></h1>
@@ -52,177 +54,130 @@
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#booking">Book detailing <span>→</span></a>
-            <a class="btn btn-secondary" href="#results">View results</a>
+            <a class="btn btn-gold" href="#booking">Book detailing <span>→</span></a>
+            <a class="btn btn-outline" href="#gallery">View results</a>
           </div>
 
-          <div class="hero-services" aria-label="Core services">
-            <div><span class="mini-icon">✦</span><p><strong>Paint correction</strong><small>Flawless finish</small></p></div>
-            <div><span class="mini-icon">◇</span><p><strong>Ceramic protection</strong><small>Long-term shine</small></p></div>
-            <div><span class="mini-icon">▣</span><p><strong>Interior restoration</strong><small>Like-new feel</small></p></div>
+          <div class="hero-services">
+            <div>
+              <span class="hero-icon">✦</span>
+              <p><strong>Paint correction</strong><small>Flawless finish</small></p>
+            </div>
+            <div>
+              <span class="hero-icon">◇</span>
+              <p><strong>Ceramic protection</strong><small>Long-term shine</small></p>
+            </div>
+            <div>
+              <span class="hero-icon">▣</span>
+              <p><strong>Interior restoration</strong><small>Like-new feel</small></p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="work-strip section" id="gallery">
+    <section class="recent-work" id="gallery">
       <div class="container">
-        <div class="section-top reveal">
-          <div>
-            <p class="eyebrow">Recent work</p>
-            <h2>Every finish tells the story.</h2>
-          </div>
-          <p>Concept imagery for a premium detailing portfolio presentation.</p>
+        <div class="section-bar reveal">
+          <p class="section-kicker">Recent work</p>
+          <a href="#services">View all results <span>→</span></a>
         </div>
 
         <div class="work-grid">
           <figure class="work-card reveal">
-            <img src="assets/images/work-paint.webp" alt="Black sports car after paint correction" loading="lazy">
-            <figcaption><strong>Paint Correction</strong><span>Deep gloss restoration</span></figcaption>
+            <img src="assets/images/work-paint.webp" alt="Black Porsche after paint correction">
+            <figcaption>Paint Correction</figcaption>
           </figure>
 
           <figure class="work-card reveal">
-            <img src="assets/images/work-ceramic.webp" alt="Water beads on protected black paint" loading="lazy">
-            <figcaption><strong>Ceramic Coating</strong><span>Hydrophobic finish</span></figcaption>
+            <img src="assets/images/work-ceramic.webp" alt="Hydrophobic ceramic coating on black paint">
+            <figcaption>Ceramic Coating</figcaption>
           </figure>
 
           <figure class="work-card reveal">
-            <img src="assets/images/work-interior.webp" alt="Detailed premium car interior" loading="lazy">
-            <figcaption><strong>Interior Detailing</strong><span>Clean cabin presentation</span></figcaption>
+            <img src="assets/images/work-interior.webp" alt="Premium Porsche interior">
+            <figcaption>Interior Detailing</figcaption>
           </figure>
 
           <figure class="work-card reveal">
-            <img src="assets/images/work-protection.webp" alt="Glossy rear quarter of a black sports car" loading="lazy">
-            <figcaption><strong>Protection</strong><span>Long-lasting finish</span></figcaption>
+            <img src="assets/images/work-protection.webp" alt="Glossy protected rear of a black Porsche">
+            <figcaption>Protection</figcaption>
           </figure>
 
           <figure class="work-card reveal">
-            <img src="assets/images/work-wheel.webp" alt="Detailed performance wheel and brake caliper" loading="lazy">
-            <figcaption><strong>Wheel Detail</strong><span>Sharp finishing touches</span></figcaption>
+            <img src="assets/images/work-wheel.webp" alt="Porsche wheel and brake caliper detail">
+            <figcaption>Wheel &amp; Caliper Detail</figcaption>
           </figure>
         </div>
       </div>
     </section>
 
-    <section class="section results-section" id="results">
-      <div class="container">
-        <div class="section-top reveal">
-          <div>
-            <p class="eyebrow">Before & after</p>
-            <h2>Proof lives in the surface.</h2>
-          </div>
-          <p>Drag each handle to reveal the finish after detailing.</p>
+    <section class="contact-strip">
+      <div class="container contact-grid">
+        <div class="contact-item reveal">
+          <span class="contact-icon">⌖</span>
+          <p><strong>Premium Studio</strong><small>Miami, FL</small></p>
         </div>
-
-        <div class="compare-grid">
-          <article class="compare-card reveal">
-            <div class="compare" data-compare>
-              <img class="compare-img after-img" src="assets/images/after-paint.webp" alt="Polished black paint after correction">
-              <div class="compare-before" data-before>
-                <img class="compare-img before-img" src="assets/images/before-paint.webp" alt="Black paint with visible swirls before correction">
-              </div>
-              <span class="compare-tag tag-before">Before</span>
-              <span class="compare-tag tag-after">After</span>
-              <input class="compare-range" type="range" min="8" max="92" value="50" aria-label="Paint correction before and after comparison">
-              <div class="compare-line" data-handle><span>↔</span></div>
-            </div>
-            <div class="compare-caption">
-              <strong>Paint Correction</strong>
-              <span>Swirl reduction and restored clarity</span>
-            </div>
-          </article>
-
-          <article class="compare-card reveal">
-            <div class="compare" data-compare>
-              <img class="compare-img after-img" src="assets/images/after-interior.webp" alt="Clean leather seat after interior detailing">
-              <div class="compare-before" data-before>
-                <img class="compare-img before-img" src="assets/images/before-interior.webp" alt="Dirty leather seat before interior detailing">
-              </div>
-              <span class="compare-tag tag-before">Before</span>
-              <span class="compare-tag tag-after">After</span>
-              <input class="compare-range" type="range" min="8" max="92" value="50" aria-label="Interior before and after comparison">
-              <div class="compare-line" data-handle><span>↔</span></div>
-            </div>
-            <div class="compare-caption">
-              <strong>Interior Restoration</strong>
-              <span>Deep cleaning with a refined final presentation</span>
-            </div>
-          </article>
+        <div class="contact-item reveal">
+          <span class="contact-icon">◷</span>
+          <p><strong>Mon – Sat</strong><small>9:00 AM – 7:00 PM</small></p>
+        </div>
+        <div class="contact-item reveal">
+          <span class="contact-icon">⌕</span>
+          <p><strong>(305) 555-0148</strong><small>Call or Text</small></p>
+        </div>
+        <div class="contact-item reveal">
+          <span class="contact-icon">◉</span>
+          <p><strong>WhatsApp</strong><small>Quick Response</small></p>
         </div>
       </div>
     </section>
 
-    <section class="section section-muted" id="services">
+    <section class="section section-dark" id="services">
       <div class="container">
-        <div class="section-top reveal">
-          <div>
-            <p class="eyebrow">Services</p>
-            <h2>Precision care, panel by panel.</h2>
-          </div>
-          <p>Focused treatments for paint, protection and interior presentation.</p>
+        <div class="section-heading reveal">
+          <p class="eyebrow">Services</p>
+          <h2>Precision care for every surface.</h2>
+          <p>Focused detailing services for paint, protection and interior presentation.</p>
         </div>
 
         <div class="services-grid">
           <article class="service-card reveal">
-            <span>01</span><h3>Paint Correction</h3>
-            <p>Multi-stage polishing to reduce swirls, haze and light defects while restoring clarity and depth.</p>
+            <span>01</span>
+            <h3>Paint Correction</h3>
+            <p>Multi-stage polishing to reduce swirls, haze and light defects while restoring depth and clarity.</p>
             <strong>From $249</strong>
           </article>
+
           <article class="service-card reveal">
-            <span>02</span><h3>Ceramic Coating</h3>
-            <p>Hydrophobic protection designed to preserve gloss and make routine maintenance easier.</p>
+            <span>02</span>
+            <h3>Ceramic Coating</h3>
+            <p>Hydrophobic protection designed to preserve gloss and simplify future maintenance.</p>
             <strong>From $399</strong>
           </article>
+
           <article class="service-card reveal">
-            <span>03</span><h3>Interior Detail</h3>
+            <span>03</span>
+            <h3>Interior Detail</h3>
             <p>Deep cleaning for leather, textiles, plastics and hard-to-reach areas with a refined finish.</p>
             <strong>From $179</strong>
           </article>
+
           <article class="service-card reveal">
-            <span>04</span><h3>PPF Prep</h3>
-            <p>Decontamination, inspection and surface preparation before paint-protection film installation.</p>
+            <span>04</span>
+            <h3>Wheel & Caliper Detail</h3>
+            <p>Deep wheel cleaning, brake caliper care and finishing touches that complete the presentation.</p>
             <strong>Custom quote</strong>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section process-section">
-      <div class="container process-grid">
-        <div class="section-copy reveal">
-          <p class="eyebrow">The BLACKLINE standard</p>
-          <h2>A boutique process, not a quick wash.</h2>
-          <p>Every service starts with inspection and ends with a final presentation check.</p>
-        </div>
-
-        <div class="process-list">
-          <article class="process-item reveal">
-            <span>01</span>
-            <div><h3>Inspect</h3><p>Paint, trim and interior condition are reviewed before the service is selected.</p></div>
-          </article>
-          <article class="process-item reveal">
-            <span>02</span>
-            <div><h3>Correct</h3><p>We focus effort where it creates the most visible improvement without unnecessary steps.</p></div>
-          </article>
-          <article class="process-item reveal">
-            <span>03</span>
-            <div><h3>Protect</h3><p>The finish is prepared for the protection level selected for the vehicle and its use.</p></div>
-          </article>
-          <article class="process-item reveal">
-            <span>04</span>
-            <div><h3>Present</h3><p>Final inspection and maintenance guidance complete the handoff.</p></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-muted" id="packages">
+    <section class="section packages-section" id="packages">
       <div class="container">
-        <div class="section-top reveal">
-          <div>
-            <p class="eyebrow">Packages</p>
-            <h2>Choose the level of finish.</h2>
-          </div>
+        <div class="section-heading reveal">
+          <p class="eyebrow">Packages</p>
+          <h2>Choose your level of finish.</h2>
           <p>Demo pricing for the BLACKLINE portfolio concept.</p>
         </div>
 
@@ -237,7 +192,7 @@
               <li>Interior refresh</li>
               <li>Spray sealant</li>
             </ul>
-            <a class="btn btn-secondary full" href="#booking">Choose Essential</a>
+            <a class="btn btn-outline full" href="#booking">Choose Essential</a>
           </article>
 
           <article class="price-card featured reveal">
@@ -251,7 +206,7 @@
               <li>1-year ceramic protection</li>
               <li>Interior detail</li>
             </ul>
-            <a class="btn btn-primary full" href="#booking">Choose Signature</a>
+            <a class="btn btn-gold full" href="#booking">Choose Signature</a>
           </article>
 
           <article class="price-card reveal">
@@ -264,20 +219,20 @@
               <li>Deep interior restoration</li>
               <li>Trim & glass coating</li>
             </ul>
-            <a class="btn btn-secondary full" href="#booking">Choose Blackline+</a>
+            <a class="btn btn-outline full" href="#booking">Choose Blackline+</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="booking-section" id="booking">
+    <section class="section booking-section" id="booking">
       <div class="container booking-grid">
         <div class="booking-copy reveal">
           <p class="eyebrow">Booking</p>
           <h2>Tell us about your car.</h2>
           <p>Send the basics and we’ll recommend a package. This portfolio form is a demo and does not submit data.</p>
 
-          <div class="contact-grid">
+          <div class="booking-info">
             <div><small>Studio</small><strong>Premium Studio · Miami, FL</strong></div>
             <div><small>Hours</small><strong>Mon–Sat · 9:00–19:00</strong></div>
             <div><small>Phone</small><strong>(305) 555-0148</strong></div>
@@ -291,7 +246,7 @@
             <label>Phone<input type="tel" name="phone" placeholder="+1 555 000 0000" required></label>
           </div>
 
-          <label>Vehicle<input type="text" name="vehicle" placeholder="e.g. BMW M340i" required></label>
+          <label>Vehicle<input type="text" name="vehicle" placeholder="e.g. Porsche 911 Carrera" required></label>
 
           <label>
             Service
@@ -300,6 +255,7 @@
               <option>Paint Correction</option>
               <option>Ceramic Coating</option>
               <option>Interior Detail</option>
+              <option>Wheel & Caliper Detail</option>
               <option>Signature Package</option>
               <option>Blackline+ Package</option>
             </select>
@@ -307,7 +263,7 @@
 
           <label>Notes<textarea name="notes" rows="5" placeholder="Tell us what you want to improve..."></textarea></label>
 
-          <button class="btn btn-primary full" type="submit">Request a quote</button>
+          <button class="btn btn-gold full" type="submit">Request a quote</button>
           <p class="form-status" id="formStatus" aria-live="polite"></p>
         </form>
       </div>
@@ -315,13 +271,22 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
+    <div class="container footer-layout">
       <a class="brand" href="#top">
         <span class="brand-mark">BL</span>
-        <span class="brand-copy"><strong>BLACKLINE</strong><small>DETAILING</small></span>
+        <span class="brand-copy">
+          <strong>BLACKLINE</strong>
+          <small>DETAILING</small>
+        </span>
       </a>
-      <p>Premium automotive detailing concept website for portfolio use.</p>
-      <p class="copyright">© <span id="year"></span> BLACKLINE · Concept project</p>
+
+      <p>© <span id="year"></span> BLACKLINE Detailing. Concept portfolio project.</p>
+
+      <div class="socials" aria-label="Social links">
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="Facebook">●</a>
+        <a href="#" aria-label="Social">✣</a>
+      </div>
     </div>
   </footer>
 
