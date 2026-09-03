@@ -16,3 +16,8 @@ Premium portfolio concept for a fictional automotive detailing studio.
 Open `index.html` in your browser.
 
 All business data, pricing and claims are fictional portfolio/demo content.
+
+
+## Deployment
+
+Automatically deployed from GitHub to Netlify.
