@@ -3,246 +3,296 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Alder & Ash Barber Studio — concept website by EVG Web." />
-  <title>Alder & Ash — Barber Studio</title>
+  <meta name="description" content="BLACKLINE Detailing — premium automotive detailing concept website." />
+  <meta name="theme-color" content="#070809" />
+  <title>BLACKLINE Detailing</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Alder and Ash home">
-      <span>ALDER &amp; ASH</span>
-      <small>BARBER STUDIO</small>
-    </a>
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="BLACKLINE home">
+        <span class="brand-mark">BL</span>
+        <span class="brand-copy">
+          <strong>BLACKLINE</strong>
+          <small>DETAILING</small>
+        </span>
+      </a>
 
-    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span>
-    </button>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
 
-    <nav class="nav" aria-label="Primary navigation">
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#barbers">Barbers</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#visit">Visit</a>
-    </nav>
-
-    <a class="button button-light header-cta" href="#booking">Book appointment</a>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#packages">Packages</a>
+        <a href="#booking">Booking</a>
+        <a class="nav-cta" href="#booking">Get a quote</a>
+      </nav>
+    </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content container">
-        <p class="eyebrow">Modern barbering · Concept project</p>
-        <h1>Good hair.<br><span>No fuss.</span></h1>
-        <p class="hero-copy">Modern cuts, clean fades and proper beard work — done with attention to detail.</p>
-        <div class="hero-actions">
-          <a class="button button-light" href="#booking">Book an appointment</a>
-          <a class="button button-ghost" href="#services">View services</a>
-        </div>
-        <div class="hero-points">
-          <span>Thoughtful service</span>
-          <span>Skilled barbers</span>
-          <span>Relaxed atmosphere</span>
-        </div>
-      </div>
-    </section>
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
 
-    <section class="section section-light" id="services">
-      <div class="container">
-        <div class="section-heading split-heading">
-          <div>
-            <p class="eyebrow dark">Our services</p>
-            <h2>Services &amp; pricing</h2>
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Premium automotive care</p>
+          <h1>Restore the finish.<br><span>Protect the feeling.</span></h1>
+          <p class="hero-text">
+            Paint correction, ceramic protection and interior restoration
+            for drivers who expect more from their finish.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#booking">Book detailing <span>→</span></a>
+            <a class="btn btn-outline" href="#gallery">View gallery</a>
           </div>
-          <p>Simple, transparent pricing for a straightforward visit.</p>
-        </div>
 
-        <div class="service-grid">
-          <article class="service-card">
-            <span class="service-number">01</span>
-            <h3>The Classic Cut</h3>
-            <p>A clean, tailored cut finished to suit your style.</p>
-            <strong>$35</strong>
-          </article>
-          <article class="service-card">
-            <span class="service-number">02</span>
-            <h3>Skin Fade</h3>
-            <p>Sharp transition, clean edges and a precise finish.</p>
-            <strong>$40</strong>
-          </article>
-          <article class="service-card">
-            <span class="service-number">03</span>
-            <h3>Beard Trim</h3>
-            <p>Shape, tidy and define your beard with care.</p>
-            <strong>$20</strong>
-          </article>
-          <article class="service-card">
-            <span class="service-number">04</span>
-            <h3>Cut + Beard</h3>
-            <p>The complete service for a polished, balanced look.</p>
-            <strong>$50</strong>
-          </article>
-        </div>
-        <p class="concept-note">Prices are sample content for this concept project.</p>
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <div class="about-image" role="img" aria-label="Warm modern barber studio interior"></div>
-      <div class="about-copy">
-        <p class="eyebrow">About us</p>
-        <h2>More than just<br>a haircut.</h2>
-        <p>Alder &amp; Ash is imagined as a neighborhood barber studio built around quality, calm and attention to detail. No rush, no unnecessary extras — just a comfortable place to look sharp and feel like yourself.</p>
-        <div class="value-list">
-          <span>Quality tools</span>
-          <span>Skilled barbers</span>
-          <span>Relaxed atmosphere</span>
-          <span>Modern techniques</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark" id="barbers">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Our team</p>
-          <h2>Meet the barbers</h2>
-          <p class="muted">Fictional team profiles created for this portfolio concept.</p>
-        </div>
-
-        <div class="team-grid">
-          <article class="team-card">
-            <img src="assets/barber-james-v1.jpg" loading="lazy" alt="Concept portrait of barber James" />
+          <div class="hero-services">
             <div>
-              <span>Senior Barber</span>
-              <h3>James</h3>
-              <p>Classic cuts · Fades · Beard care</p>
+              <span class="hero-icon">✦</span>
+              <p><strong>Paint correction</strong><small>Flawless finish</small></p>
             </div>
-          </article>
-          <article class="team-card">
-            <img src="assets/barber-marcus-v1.jpg" loading="lazy" alt="Concept portrait of barber Marcus" />
             <div>
-              <span>Barber</span>
-              <h3>Marcus</h3>
-              <p>Modern cuts · Skin fades · Styling</p>
+              <span class="hero-icon">◇</span>
+              <p><strong>Ceramic protection</strong><small>Long-term shine</small></p>
             </div>
-          </article>
-          <article class="team-card">
-            <img src="assets/barber-leo-v1.jpg" loading="lazy" alt="Concept portrait of barber Leo" />
             <div>
-              <span>Barber</span>
-              <h3>Leo</h3>
-              <p>Classic cuts · Beard trim · Grooming</p>
+              <span class="hero-icon">▣</span>
+              <p><strong>Interior restoration</strong><small>Like-new feel</small></p>
             </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-light" id="gallery">
-      <div class="container">
-        <div class="section-heading split-heading">
-          <div>
-            <p class="eyebrow dark">Gallery</p>
-            <h2>Real style.<br>Clean details.</h2>
           </div>
-          <p>Editorial imagery created for the Alder &amp; Ash concept.</p>
-        </div>
-
-        <div class="gallery-grid">
-          <img src="assets/gallery-1.png" loading="lazy" alt="Barbershop concept detail" />
-          <img src="assets/gallery-2.png" loading="lazy" alt="Barber working in studio" />
-          <img src="assets/gallery-3.png" loading="lazy" alt="Barber tools" />
-          <img src="https://images.unsplash.com/photo-1653875700329-a7c8aca94c95?auto=format&fit=crop&w=1500&q=88" loading="lazy" alt="Modern haircut detail" />
         </div>
       </div>
     </section>
 
-    <section class="booking" id="booking">
-      <div class="booking-bg"></div>
-      <div class="container booking-inner">
-        <div>
+    <section class="recent-work" id="gallery">
+      <div class="container">
+        <div class="section-bar reveal">
+          <p class="section-kicker">Recent work</p>
+          <a href="#services">View full gallery <span>→</span></a>
+        </div>
+
+        <div class="work-grid">
+          <figure class="work-card reveal">
+            <img src="assets/images/work-paint.webp" alt="Black Porsche after paint correction">
+            <figcaption>Paint Correction</figcaption>
+          </figure>
+
+          <figure class="work-card reveal">
+            <img src="assets/images/work-ceramic.webp" alt="Hydrophobic ceramic coating on black paint">
+            <figcaption>Ceramic Coating</figcaption>
+          </figure>
+
+          <figure class="work-card reveal">
+            <img src="assets/images/work-interior.webp" alt="Premium Porsche interior">
+            <figcaption>Interior Detailing</figcaption>
+          </figure>
+
+          <figure class="work-card reveal">
+            <img src="assets/images/work-protection.webp" alt="Glossy protected rear of a black Porsche">
+            <figcaption>Protection</figcaption>
+          </figure>
+
+          <figure class="work-card reveal">
+            <img src="assets/images/work-wheel.webp" alt="Porsche wheel and brake caliper detail">
+            <figcaption>Wheel &amp; Caliper Detail</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-strip">
+      <div class="container contact-grid">
+        <div class="contact-item reveal">
+          <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s6-5.1 6-11a6 6 0 1 0-12 0c0 5.9 6 11 6 11Z"/><circle cx="12" cy="10" r="2.2"/></svg></span>
+          <p><strong>Premium Studio</strong><small>Miami, FL</small></p>
+        </div>
+        <div class="contact-item reveal">
+          <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/></svg></span>
+          <p><strong>Mon – Sat</strong><small>9:00 AM – 7:00 PM</small></p>
+        </div>
+        <div class="contact-item reveal">
+          <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/><path d="M9 7h6M9 17h6"/></svg></span>
+          <p><strong>(305) 555-0148</strong><small>Call or Text</small></p>
+        </div>
+        <div class="contact-item reveal">
+          <span class="contact-icon whatsapp-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 11.7a8 8 0 0 1-11.8 7L4 20l1.3-4.1A8 8 0 1 1 20 11.7Z"/><path d="M9 8.5c.4 2.5 2 4.2 4.5 5.2l1.2-1.2 2 .8c-.5 1.7-1.7 2.4-3.3 2.1-3.6-.7-6-3.2-6.7-6.7-.3-1.6.4-2.8 2.1-3.3l.8 2L9 8.5Z"/></svg></span>
+          <p><strong>WhatsApp</strong><small>Quick response · number added at launch</small></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Services</p>
+          <h2>Precision care for every surface.</h2>
+          <p>Focused detailing services for paint, protection and interior presentation.</p>
+        </div>
+
+        <div class="services-list">
+          <article class="service-row reveal">
+            <div class="service-copy">
+              <h3>Paint Correction</h3>
+              <p>Restore depth, gloss and clarity by reducing swirls, haze and light paint defects.</p>
+            </div>
+            <a class="service-price" href="#booking">From $249 <span>→</span></a>
+          </article>
+
+          <article class="service-row reveal">
+            <div class="service-copy">
+              <h3>Ceramic Coating</h3>
+              <p>Long-term hydrophobic protection designed to preserve gloss and simplify maintenance.</p>
+            </div>
+            <a class="service-price" href="#booking">From $399 <span>→</span></a>
+          </article>
+
+          <article class="service-row reveal">
+            <div class="service-copy">
+              <h3>Interior Detail</h3>
+              <p>Deep cleaning for leather, textiles, plastics and hard-to-reach areas with a refined finish.</p>
+            </div>
+            <a class="service-price" href="#booking">From $179 <span>→</span></a>
+          </article>
+
+          <article class="service-row reveal">
+            <div class="service-copy">
+              <h3>Wheel &amp; Caliper Detail</h3>
+              <p>Deep wheel cleaning, brake caliper care and finishing touches that complete the presentation.</p>
+            </div>
+            <a class="service-price" href="#booking">Custom quote <span>→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section packages-section" id="packages">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Packages</p>
+          <h2>Choose your level of finish.</h2>
+          <p>Demo pricing for the BLACKLINE portfolio concept.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <p class="price-kicker">Essential</p>
+            <h3>$149</h3>
+            <p class="price-sub">Maintenance detail</p>
+            <ul>
+              <li>Safe exterior wash</li>
+              <li>Wheel & tire clean</li>
+              <li>Interior refresh</li>
+              <li>Spray sealant</li>
+            </ul>
+            <a class="btn btn-outline full" href="#booking">Choose Essential</a>
+          </article>
+
+          <article class="price-card featured reveal">
+            <span class="featured-tag">Most popular</span>
+            <p class="price-kicker">Signature</p>
+            <h3>$449</h3>
+            <p class="price-sub">Gloss restoration + ceramic</p>
+            <ul>
+              <li>Full decontamination</li>
+              <li>One-stage paint correction</li>
+              <li>1-year ceramic protection</li>
+              <li>Interior detail</li>
+            </ul>
+            <a class="btn btn-gold full" href="#booking">Choose Signature</a>
+          </article>
+
+          <article class="price-card reveal">
+            <p class="price-kicker">Blackline+</p>
+            <h3>$899</h3>
+            <p class="price-sub">Complete transformation</p>
+            <ul>
+              <li>Multi-stage correction</li>
+              <li>3-year ceramic protection</li>
+              <li>Deep interior restoration</li>
+              <li>Trim & glass coating</li>
+            </ul>
+            <a class="btn btn-outline full" href="#booking">Choose Blackline+</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section booking-section" id="booking">
+      <div class="container booking-grid">
+        <div class="booking-copy reveal">
           <p class="eyebrow">Booking</p>
-          <h2>Ready for a fresh cut?</h2>
-          <p>Choose a service and send a booking request in seconds.</p>
-        </div>
-        <button class="button button-light" id="openBooking">Book now</button>
-      </div>
-    </section>
+          <h2>Tell us about your car.</h2>
+          <p>Send the basics and we’ll recommend the right level of care for your vehicle.</p>
 
-    <section class="section section-light visit" id="visit">
-      <div class="container visit-grid">
-        <div>
-          <p class="eyebrow dark">Visit the studio</p>
-          <h2>Location &amp; hours</h2>
-          <p class="muted-dark">This is a fictional address used only for the EVG Web portfolio concept.</p>
+          <div class="booking-info">
+            <div><small>Studio</small><strong>Premium Studio · Miami, FL</strong></div>
+            <div><small>Hours</small><strong>Mon–Sat · 9:00–19:00</strong></div>
+            <div><small>Phone</small><strong>(305) 555-0148</strong></div>
+            <div><small>Response</small><strong>Call or message</strong></div>
+          </div>
         </div>
-        <div class="visit-card">
-          <h3>Studio</h3>
-          <p>123 Concept Street<br>Riverside, CA</p>
-          <p>hello@alderandash.example<br>(555) 123-4567</p>
-        </div>
-        <div class="visit-card">
-          <h3>Opening hours</h3>
-          <p>Mon–Fri · 9:00–19:00<br>Saturday · 9:00–18:00<br>Sunday · Closed</p>
-        </div>
+
+        <form class="booking-form reveal" id="bookingForm" novalidate>
+          <div class="field-row">
+            <label>Name<input type="text" name="name" placeholder="Your name" required></label>
+            <label>Phone<input type="tel" name="phone" placeholder="+1 555 000 0000" required></label>
+          </div>
+
+          <label>Vehicle<input type="text" name="vehicle" placeholder="e.g. Porsche 911 Carrera" required></label>
+
+          <label>
+            Service
+            <select name="service" required>
+              <option value="">Select a service</option>
+              <option>Paint Correction</option>
+              <option>Ceramic Coating</option>
+              <option>Interior Detail</option>
+              <option>Wheel & Caliper Detail</option>
+              <option>Signature Package</option>
+              <option>Blackline+ Package</option>
+            </select>
+          </label>
+
+          <label>Notes<textarea name="notes" rows="5" placeholder="Tell us what you want to improve..."></textarea></label>
+
+          <button class="btn btn-gold full" type="submit">Request a quote</button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-grid">
-      <a class="brand footer-brand" href="#top">
-        <span>ALDER &amp; ASH</span>
-        <small>BARBER STUDIO</small>
+  <footer class="site-footer">
+    <div class="container footer-layout">
+      <a class="brand" href="#top">
+        <span class="brand-mark">BL</span>
+        <span class="brand-copy">
+          <strong>BLACKLINE</strong>
+          <small>DETAILING</small>
+        </span>
       </a>
-      <p>Concept Project · Designed &amp; developed for the EVG Web portfolio.</p>
-      <a href="https://instagram.com/evg.webdesign" target="_blank" rel="noreferrer">@evg.webdesign</a>
+
+      <p>© <span id="year"></span> BLACKLINE Detailing. Concept portfolio project.</p>
+
+      <div class="socials" aria-label="Social links">
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="Facebook">●</a>
+        <a href="#" aria-label="Social">✣</a>
+      </div>
     </div>
   </footer>
 
-  <div class="modal" id="bookingModal" aria-hidden="true">
-    <div class="modal-backdrop" data-close-modal></div>
-    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
-      <button class="modal-close" aria-label="Close booking form" data-close-modal>×</button>
-      <p class="eyebrow dark">Demo booking</p>
-      <h2 id="bookingTitle">Book an appointment</h2>
-      <p class="modal-intro">This form is a front-end demo for the concept project.</p>
-      <form id="bookingForm">
-        <label>
-          Name
-          <input type="text" name="name" required placeholder="Your name" />
-        </label>
-        <label>
-          Service
-          <select name="service" required>
-            <option value="">Choose a service</option>
-            <option>The Classic Cut</option>
-            <option>Skin Fade</option>
-            <option>Beard Trim</option>
-            <option>Cut + Beard</option>
-          </select>
-        </label>
-        <label>
-          Preferred date
-          <input type="date" name="date" required />
-        </label>
-        <label>
-          Phone or email
-          <input type="text" name="contact" required placeholder="How should we contact you?" />
-        </label>
-        <button class="button button-dark" type="submit">Send demo request</button>
-      </form>
-      <div class="success-message" id="successMessage">
-        Demo request received. In a real client project, this would connect to the booking system.
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
